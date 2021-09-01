@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $service = new \App\Services\SchoolCrudService;
-    $service->setModel(School::first())->delete();
     return view('welcome');
 });
 
